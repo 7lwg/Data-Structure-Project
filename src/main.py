@@ -2,6 +2,7 @@ import sys
 from phase1_indexer import run_phase1
 from phase2_tracker import run_phase2
 from phase3_parser import run_phase3
+from phase4_buffer import run_phase4
 # ── Main menu ──────────────────────────────────────────────────
 def main():
     while True:
@@ -21,6 +22,8 @@ def main():
             run_phase2()
         elif choice == "3":                 
             run_phase3()
+        elif choice == "4":                 
+            run_phase4()
         elif choice == "6":
             print("Shutting down DataFlow Pro. Masalama!")
             sys.exit()
