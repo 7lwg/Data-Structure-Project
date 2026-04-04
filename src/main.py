@@ -1,6 +1,7 @@
 import sys
 from phase1_indexer import run_phase1
 from phase2_tracker import run_phase2
+from phase3_parser import run_phase3
 # ── Main menu ──────────────────────────────────────────────────
 def main():
     while True:
