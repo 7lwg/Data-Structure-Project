@@ -1,38 +1,6 @@
 import sys
 from phase1_indexer import run_phase1
-from phase2_tracker import AppliedStepsTracker
-
-
-# ── Phase 2 runner ─────────────────────────────────────────────
-def run_phase2():
-    print("\n==================================================")
-    print("   Phase 2: Applied Steps Tracker (Linked Lists)  ")
-    print("==================================================")
-    tracker = AppliedStepsTracker()
-    while True:
-        print("\n  Current Step:", tracker.get_current_step())
-        print("  a. Add Step")
-        print("  b. Undo")
-        print("  c. Redo")
-        print("  d. Show History")
-        print("  e. Back to Main Menu")
-        choice = input("\n  Select an option: ").strip().lower()
-        if choice == "a":
-            name = input("  Step name (e.g. Remove Nulls): ").strip()
-            desc = input("  Description: ").strip()
-            tracker.add_step(name, desc)
-        elif choice == "b":
-            tracker.undo()
-        elif choice == "c":
-            tracker.redo()
-        elif choice == "d":
-            tracker.display_history()
-        elif choice == "e":
-            break
-        else:
-            print("  Invalid choice.")
-
-
+from phase2_tracker import run_phase2
 # ── Main menu ──────────────────────────────────────────────────
 def main():
     while True:
