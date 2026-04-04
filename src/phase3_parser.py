@@ -193,3 +193,24 @@ class DAXEvaluator:
         # 5. Evaluate postfix with a Stack
         result = evaluate_postfix(postfix)
         return result
+        
+def run_phase3():
+    print("\n==================================================")
+    print("   Phase 3: DAX Formula Parser (Stacks)           ")
+    print("==================================================")
+    engine = DAXEvaluator()
+    while True:
+        print("\n  a. Evaluate a formula")
+        print("  b. Back to Main Menu")
+        choice = input("\n  Select an option: ").strip().lower()
+        if choice == "a":
+            expr = input("  Enter formula (e.g. (100 - 20) * 0.14): ").strip()
+            try:
+                result = engine.evaluate(expr)
+                print(f"  Result: {result:,.4f}")
+            except Exception as e:
+                print(f"  Error: {e}")
+        elif choice == "b":
+            break
+        else:
+            print("  Invalid choice.")

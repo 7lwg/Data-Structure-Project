@@ -10,7 +10,7 @@ def main():
         print("==================================================")
         print("1. Run Phase 1: Query Optimizer (Sorting & Searching)")
         print("2. Run Phase 2: Applied Steps Tracker (Linked Lists)")  # ← uncommented
-        # print("3. Evaluate DAX Formula (Stack)")
+        print("3. Evaluate DAX Formula (Stack)")
         # print("4. Ingest Live Data (Queue)")
         # print("5. Analyze Org Chart Sales (Trees)")
         print("6. Exit")
@@ -19,6 +19,8 @@ def main():
             run_phase1()
         elif choice == "2":           # ← added
             run_phase2()
+        elif choice == "3":                  # ← add this
+            run_phase3()
         elif choice == "6":
             print("Shutting down DataFlow Pro. Masalama!")
             sys.exit()
