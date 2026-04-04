@@ -9,7 +9,7 @@ def main():
         print("   Welcome to DataFlow Pro - NileMart ETL Engine  ")
         print("==================================================")
         print("1. Run Phase 1: Query Optimizer (Sorting & Searching)")
-        print("2. Run Phase 2: Applied Steps Tracker (Linked Lists)")  # ← uncommented
+        print("2. Run Phase 2: Applied Steps Tracker (Linked Lists)")  
         print("3. Evaluate DAX Formula (Stack)")
         # print("4. Ingest Live Data (Queue)")
         # print("5. Analyze Org Chart Sales (Trees)")
@@ -17,9 +17,9 @@ def main():
         choice = input("\nSelect an option: ")
         if choice == "1":
             run_phase1()
-        elif choice == "2":           # ← added
+        elif choice == "2":          
             run_phase2()
-        elif choice == "3":                  # ← add this
+        elif choice == "3":                 
             run_phase3()
         elif choice == "6":
             print("Shutting down DataFlow Pro. Masalama!")
